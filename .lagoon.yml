@@ -20,11 +20,11 @@ tasks:
         service: cli
         shell: bash
      - run:
-         name: drush cim
-         # Enable once config sync has been setup.
-         command: drush -y cim
-         service: cli
-         shell: bash
+        name: drush cim
+        # Enable once config sync has been setup.
+        command: drush -y cim
+        service: cli
+        shell: bash
     - run:
         name: drush cr
         # This will only run if the database exists.
