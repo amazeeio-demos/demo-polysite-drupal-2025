@@ -43,7 +43,7 @@ docker ps --filter label=com.docker.compose.project=drupalbase | grep Up | grep 
 lando ssh -c "env | grep LAGOON=" | grep cli-drupal
 
 # Should have the correct environment set
-lando ssh -c "env" | grep LAGOON_ROUTE | grep drupal-base.lndo.site
+lando ssh -c "env" | grep LAGOON_ROUTE | grep demo-polysite-drupal.lndo.site
 lando ssh -c "env" | grep LAGOON_ENVIRONMENT_TYPE | grep development
 
 # Should be running PHP 8
